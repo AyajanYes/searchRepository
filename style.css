@@ -1,0 +1,86 @@
+body {
+  background-color: #C4C4C4;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 62px auto;
+}
+
+.search-input {
+  width: 100%;
+  background-color: white;
+  height: 61px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  padding: 5px 13px;
+  box-sizing: border-box;
+  color: #000000;
+  border: none;
+}
+
+.autocomplit {
+  background: #E3E3E3;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+  margin-bottom: 45px;
+}
+
+.autocomplit li {
+  border: 2px solid #000000;
+  list-style: none;
+  padding: 13px;
+}
+
+.autocomplit li:hover {
+  background-color: #65CDF9;
+}
+
+.repository-list {
+  background: #E27BEB;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.repository-list li {
+  position: relative;
+  border: 1px solid #000000;
+  list-style: none;
+  padding: 8px 16px;
+}
+
+.repository-list li > div {
+  position: absolute;
+  top: 20%;
+  right: 34px;
+  width: 20px;
+}
+
+.repository-list li > div::after,
+.repository-list li > div::before {
+  position: absolute;
+  height: 57px;
+  width: 4px;
+  background-color: #FF0000;
+  cursor: pointer;
+  content: "";
+}
+
+.repository-list li > div::after {
+  transform: rotate(45deg);
+}
+
+.repository-list li > div::before {
+  transform: rotate(-45deg);
+}
